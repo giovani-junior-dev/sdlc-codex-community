@@ -1,0 +1,32 @@
+node_modules/
+dist/
+.sdlc-codex/
+.sdlc-codex/runtime.json
+.sdlc-codex/runtime.backup.json
+.sdlc-codex/state.lock
+.sdlc-codex/evidence/
+.sdlc-codex/worktrees/
+*.log
+!docs/validation/**/*.log
+*.tgz
+pack-result.json
+.ignore
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+
+# Credentials and local security-review material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.dev.vars
+.dev.vars.*
+auth.json
+credentials.json
+*private-backup*/
+*original-history*.bundle
+*gitleaks-report*.json

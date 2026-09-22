@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#141718">
+  <meta name="description" content="Transforme sessões do Codex em um time. Planejamento, desenvolvimento, revisão e testes com comunicação bidirecional e evidências em cada etapa.">
+  <title>SDLC Codex — Sua próxima aplicação. Um time inteiro construindo.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero-motion.css">
+  <link rel="stylesheet" href="tutorial.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="nav-shell">
+      <a class="brand" href="#" aria-label="SDLC Codex, início"><img src="assets/logo.svg" width="34" height="38" alt="">SDLC Codex</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" aria-label="Principal">
+        <a href="#como-funciona">Como funciona</a><a href="#tutorial">Tutorial</a><a href="#changelog">Changelog</a>
+        <a class="nav-github" href="https://github.com/giovani-junior-dev/sdlc-codex-community">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-background" aria-hidden="true">
+        <img class="hero-poster" src="assets/factory.png" width="1774" height="887" fetchpriority="high" alt="">
+        <video id="hero-video" muted loop playsinline preload="none" poster="assets/factory.png" tabindex="-1" data-src="assets/factory-flow-loop.mp4"></video>
+      </div>
+      <div class="hero-copy container">
+        <a class="release-badge" href="#changelog"><span class="status-dot"></span> v0.1.0 disponível <span aria-hidden="true">↗</span></a>
+        <h1 id="hero-title">Sua próxima aplicação.<br><span>Uma equipe inteira construindo.</span></h1>
+        <p class="hero-description">Orquestre sessões do Codex com planejamento, revisão<br class="desktop-break"> e evidências em cada etapa.</p>
+        <div class="actions"><a class="button primary" href="#tutorial">Começar a usar <span aria-hidden="true">↗</span></a><a class="button secondary" href="#como-funciona">Conhecer o fluxo <span aria-hidden="true">↓</span></a></div>
+        <span class="margin-note left-note" aria-hidden="true">PLANEJAMENTO<br>EXECUÇÃO<br>REVISÃO<br>EVIDÊNCIAS<br><span>——</span></span>
+        <span class="margin-note right-note" aria-hidden="true">BOAS APLICAÇÕES<br>COMEÇAM COM<br>UM BOM PROCESSO.<br><span>——</span></span>
+      </div>
+      <div class="hero-bottom container">
+        <p class="hero-caption"><span class="status-dot"></span> DO PROJETO À ENTREGA <small>Uma fábrica de software. Cinco sessões em colaboração.</small></p>
+        <button id="motion-toggle" class="motion-toggle" hidden aria-label="Pausar animação">Pausar animação <span aria-hidden="true">Ⅱ</span></button>
+      </div>
+    </section>
+
+    <section class="workflow container" id="como-funciona" aria-labelledby="workflow-title">
+      <h2 class="sr-only" id="workflow-title">Do plano à entrega, cada papel tem uma responsabilidade</h2>
+      <ol class="flow-steps">
+        <li><span class="flow-icon" aria-hidden="true">▤</span><div>Planejar<small>planner</small></div></li>
+        <li><span class="flow-icon code-icon" aria-hidden="true">&lt;/&gt;</span><div>Construir<small>dev</small></div></li>
+        <li><span class="flow-icon" aria-hidden="true">⌕</span><div>Revisar<small>reviewer</small></div></li>
+        <li><span class="flow-icon" aria-hidden="true">☑</span><div>Testar<small>tester-e2e</small></div></li>
+        <li><span class="flow-icon" aria-hidden="true">◇</span><div>Documentar<small>document</small></div></li>
+      </ol>
+      <p class="flow-caption"><span>Cada papel tem contexto. Cada entrega tem evidências.</span></p>
+      <div class="principles">
+        <article><span class="eyebrow">CONVERSA DE VERDADE</span><h3>Sessões independentes. <br>Um objetivo em comum.</h3><p>O desenvolvedor pergunta. O revisor responde. Cada sessão mantém seu contexto e conversa com o time nos dois sentidos.</p></article>
+        <article><span class="eyebrow">CONTINUIDADE</span><h3>O trabalho continua <br>de onde parou.</h3><p>Estado, mensagens e checkpoints persistidos permitem retomar uma demanda com rastreabilidade entre as etapas.</p></article>
+        <article><span class="eyebrow">CONTROLE HUMANO</span><h3>A entrega tem provas. <br>A decisão é sua.</h3><p>Plano aprovado, revisão independente e testes verificáveis. O fluxo termina com uma PR; merge e deploy dependem de você.</p></article>
+      </div>
+    </section>
+
+    <section class="tutorial container section" id="tutorial" aria-labelledby="tutorial-title">
+      <div class="requirements" aria-labelledby="requirements-title">
+        <div class="requirements-heading"><div><span class="eyebrow accent">INSTALAÇÃO · WINDOWS NATIVO</span><h2 id="requirements-title">Primeiro, prepare sua máquina.</h2><p>O SDLC Codex coordena ferramentas instaladas no seu computador. Instale os componentes abaixo e depois confira o ambiente no terminal.</p></div><a class="text-link" href="#tutorial-run">Já tenho os requisitos ↓</a></div>
+        <div class="requirements-list">
+          <article class="requirement"><div><h3>Node.js + npm</h3><span class="requirement-tag">Node.js 22 ou superior</span></div><p>Executa e instala o CLI do SDLC Codex. Escolha o instalador para Windows com npm e reabra o terminal após instalar.</p><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">Instalar Node.js ↗<span class="sr-only"> (abre em nova aba)</span></a></article>
+          <article class="requirement"><div><h3>Git</h3><span class="requirement-tag">Disponível no PATH</span></div><p>Permite trabalhar com branches, commits e worktrees. Seu projeto precisa ser um repositório Git.</p><a href="https://git-scm.com/install/windows" target="_blank" rel="noopener noreferrer">Instalar Git ↗<span class="sr-only"> (abre em nova aba)</span></a></article>
+          <article class="requirement"><div><h3>GitHub CLI</h3><span class="requirement-tag">Comando gh</span></div><p>Baixa a release pública e opera as PRs. Depois de instalar, use <code>gh auth login</code> com uma conta que tenha acesso aos repositórios.</p><a href="https://cli.github.com/" target="_blank" rel="noopener noreferrer">Instalar GitHub CLI ↗<span class="sr-only"> (abre em nova aba)</span></a></article>
+          <article class="requirement"><div><h3>Codex CLI</h3><span class="requirement-tag">Autenticado · queue · hooks</span></div><p>Executa cada agente do time. Siga a instalação oficial, abra <code>codex</code> e conclua o login. A versão instalada precisa oferecer queue e hooks.</p><a href="https://learn.chatgpt.com/docs/codex/cli" target="_blank" rel="noopener noreferrer">Instalar Codex CLI ↗<span class="sr-only"> (abre em nova aba)</span></a></article>
+          <article class="requirement requirement-herdr"><div><h3>Herdr <span class="accent" aria-hidden="true">↗</span></h3><span class="requirement-tag">Terminal do time</span></div><p>Organiza as sessões Codex em abas e painéis. É necessário para abrir o time com <code>sdlc-codex up</code>; o SDLC Codex não instala o Herdr automaticamente.</p><a href="https://herdr.dev/docs/install/" target="_blank" rel="noopener noreferrer">Instalar Herdr ↗<span class="sr-only"> (abre em nova aba)</span></a></article>
+        </div>
+        <div class="setup-details">
+          <details><summary>Como instalar e abrir o Herdr no Windows?<span aria-hidden="true">+</span></summary><ol><li>Abra o <a href="https://herdr.dev/docs/install/" target="_blank" rel="noopener noreferrer">guia oficial de instalação (nova aba)</a> e siga a opção Windows.</li><li>Se preferir o download manual, vá às <a href="https://github.com/herdrdev/herdr/releases" target="_blank" rel="noopener noreferrer">releases oficiais (nova aba)</a> e baixe <code>herdr-windows-x86_64.zip</code>. Extraia a pasta inteira: mantenha <code>herdr.exe</code> e os arquivos de runtime juntos.</li><li>No download manual, adicione a pasta extraída ao PATH do usuário. Reabra o terminal para carregar o novo PATH.</li><li>Execute <code>herdr --version</code> para conferir a instalação e <code>herdr</code> para abrir o aplicativo no terminal.</li></ol><p>O SDLC Codex foi validado com Herdr <strong>0.7.5-preview</strong>. A versão atual oferecida pelo instalador pode ser diferente: confira a compatibilidade com <code>doctor</code> antes de abrir o time.</p></details>
+          <details><summary>Quais acessos e versões preciso conferir?<span aria-hidden="true">+</span></summary><p>A base validada do projeto usa Windows nativo, Node.js 22, Codex CLI 0.155.1 e Herdr 0.7.5-preview. Isso não garante compatibilidade automática com toda versão posterior. Veja o <a href="https://github.com/giovani-junior-dev/sdlc-codex-community/blob/main/docs/compatibility.md">registro de compatibilidade</a>.</p><p>Para baixar o SDLC Codex, o código e os downloads estão disponíveis publicamente. Para fluxos feature e hotfix, o projeto atendido precisa de um remoto GitHub e de permissão para publicar a branch e abrir PR. O Codex precisa estar autenticado com acesso ao modelo que será usado.</p></details>
+        </div>
+      </div>
+      <div class="tutorial-intro" id="tutorial-run"><span class="eyebrow accent">DO PRIMEIRO PROMPT À PRIMEIRA ENTREGA</span><h2 id="tutorial-title">Seu time começa<br>com uma conversa.</h2><p>Siga as quatro etapas no PowerShell ou escolha um prompt para orientar o Codex. Os botões copiam instruções; nada é executado pela página.</p>
+        <div class="tutorial-steps" aria-label="Etapas do tutorial">
+          <button class="step active" data-step="0" aria-pressed="true"><span>01</span><div>Confira o ambiente<small>Ferramentas, versões e acesso</small></div><b aria-hidden="true">↗</b></button>
+          <button class="step" data-step="1" aria-pressed="false"><span>02</span><div>Instale o SDLC Codex<small>Baixe a release pública</small></div><b aria-hidden="true">↗</b></button>
+          <button class="step" data-step="2" aria-pressed="false"><span>03</span><div>Prepare seu projeto<small>Confira e aplique a configuração</small></div><b aria-hidden="true">↗</b></button>
+          <button class="step" data-step="3" aria-pressed="false"><span>04</span><div>Abra o time<small>Planeje antes de executar</small></div><b aria-hidden="true">↗</b></button>
+        </div>
+        <a class="text-link" href="https://github.com/giovani-junior-dev/sdlc-codex-community#readme">Ler a documentação completa <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="tutorial-content">
+        <div class="terminal">
+          <div class="terminal-top"><div class="mode-buttons" aria-label="Formato das instruções"><button data-mode="terminal" class="selected" aria-pressed="true"><span aria-hidden="true">›_</span> Terminal</button><button data-mode="prompt" aria-pressed="false"><span aria-hidden="true">&lt;/&gt;</span> Prompt para o Codex</button></div><button class="copy-button" id="copy-code" aria-label="Copiar instruções">Copiar <span aria-hidden="true">⧉</span></button></div>
+          <div class="terminal-body"><div class="terminal-heading"><span id="code-title">Confira as ferramentas instaladas</span><span id="code-language">POWERSHELL</span></div><pre><code id="tutorial-code">node --version
+npm --version
+git --version
+gh --version
+herdr --version
+codex --version
+codex login status
+codex queue --help
+codex features list
+gh auth status</code></pre></div>
+          <div class="terminal-bottom"><span class="status-dot"></span><span id="step-summary">Cada comando deve ser reconhecido antes de continuar.</span></div>
+        </div>
+        <p class="tutorial-note" id="tutorial-note">Pré-requisitos: Windows, Node.js 22+, Git, GitHub CLI, Codex CLI autenticado e Herdr. O repositório Community é público.</p>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        <details class="install-help"><summary>Algo não funcionou na instalação?<span aria-hidden="true">+</span></summary><ul><li><strong>Comando não encontrado:</strong> reabra o terminal e confira o PATH. Para o SDLC Codex, consulte <code>npm prefix --global</code> e confira se essa pasta está no PATH.</li><li><strong>PowerShell bloqueou o shim .ps1:</strong> tente <code>sdlc-codex.cmd --help</code> ou <code>npm.cmd</code>, sem alterar a política global.</li><li><strong>GitHub retornou 404 ou acesso negado:</strong> confira <code>gh auth status</code> e o acesso ao repositório público.</li><li><strong>queue, hooks ou Herdr incompatíveis:</strong> confira as versões no registro de compatibilidade. Depois de instalar o SDLC Codex, use <code>sdlc-codex doctor --project . --json</code>.</li><li><strong>doctor apontou configuração ausente:</strong> em um projeto ainda não adotado, prepare o arquivo de configuração na etapa 03. Resolva também os erros de ferramentas antes de abrir o time.</li></ul></details>
+      </div>
+    </section>
+
+    <section class="changelog container section" id="changelog" aria-labelledby="changelog-title">
+      <div><span class="eyebrow accent">CHANGELOG</span><h2 id="changelog-title">O projeto evolui.<br>Você acompanha.</h2><p>O que chegou e o que ainda <br>estamos explorando.</p></div>
+      <div class="release-list"><div class="release-top"><span class="eyebrow">REGISTRO DE EVOLUÇÃO</span><a class="text-link" href="https://github.com/giovani-junior-dev/sdlc-codex-community/releases">Ver releases ↗</a></div>
+        <article class="release"><div class="release-meta"><span class="version">v0.1.0</span><time datetime="2026-09-22">22 set. 2026</time></div><h3>Um time completo, no seu terminal.</h3><p>Cinco papéis, mensagens bidirecionais, revisão com evidências e recuperação por checkpoint. Primeira release da edição Community.</p><div class="tags"><span>Orquestração</span><span>CLI</span><span>Windows</span></div><a class="release-link" href="https://github.com/giovani-junior-dev/sdlc-codex-community/releases/tag/v0.1.0">Notas da versão <span aria-hidden="true">↗</span></a></article>
+        <article class="release upcoming"><div class="release-meta"><span class="research">Em pesquisa</span><span class="eyebrow">SEM DATA DEFINIDA</span></div><h3>Mais possibilidades. O mesmo método.</h3><p>Pesquisa de provedores como DeepSeek e GLM. Validações adicionais de projetos em paralelo e instalação em máquina limpa.</p><div class="tags"><span>Provedores</span><span>Validação</span><span>Experiência de uso</span></div></article>
+      </div>
+    </section>
+
+    <section class="faq container section" aria-labelledby="faq-title"><div><span class="eyebrow accent">ANTES DE COMEÇAR</span><h2 id="faq-title">Contexto para<br>o próximo passo.</h2></div><div class="questions">
+      <details><summary>É um painel web para controlar meus agentes?<span aria-hidden="true">+</span></summary><p>O SDLC Codex é um CLI local. Ele organiza sessões independentes do Codex no Herdr. Esta página apresenta o projeto e ensina a usá-lo; não monitora nem executa suas sessões.</p></details>
+      <details><summary>Posso pedir ao próprio Codex para preparar o projeto?<span aria-hidden="true">+</span></summary><p>Sim. No tutorial, escolha “Prompt para o Codex”. O agente verifica o ambiente, prepara a configuração e abre o time. A execução da demanda depende do plano e dos artefatos de aprovação exigidos pelo método.</p></details>
+      <details><summary>O time faz merge ou deploy automaticamente?<span aria-hidden="true">+</span></summary><p>Não. O fluxo feature passa por desenvolvimento, revisão, testes, PR, revisão da PR e documentação. Merge, deploy e mudanças fora do escopo continuam sob decisão humana.</p></details>
+      <details><summary>Já posso usar DeepSeek, GLM ou outros provedores?<span aria-hidden="true">+</span></summary><p>A primeira versão usa os modelos disponíveis na sua instalação do Codex. A compatibilidade com provedores externos ainda está em pesquisa e não foi demonstrada.</p></details>
+    </div></section>
+
+    <section class="bottom-cta container"><div><span class="eyebrow accent">DO PLANO AO CÓDIGO. COM MÉTODO.</span><h2>Pronto para abrir seu primeiro time?</h2><p>Siga o tutorial e coloque o SDLC Codex em ação no seu projeto.</p></div><a class="button primary" href="#tutorial">Abrir tutorial <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="container footer"><a class="brand" href="#"><img src="assets/logo.svg" width="30" height="34" alt="">SDLC Codex</a><p>Contexto compartilhado. Trabalho verificável.</p><nav aria-label="Rodapé"><a href="https://github.com/giovani-junior-dev/sdlc-codex-community#readme">Documentação ↗</a><a href="#changelog">Changelog</a></nav><small>Projeto independente. Não afiliado à OpenAI.</small></footer>
+  <noscript><p class="noscript-note">JavaScript está desativado. Os requisitos e a verificação do ambiente estão visíveis acima; consulte a documentação para instalar o CLI e executar as próximas etapas.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "sdlc-codex",
+  "version": "0.1.0",
+  "description": "Orquestração local de equipes de sessões Codex com pipeline, evidências e comunicação bidirecional.",
+  "private": true,
+  "type": "module",
+  "bin": { "sdlc-codex": "dist/src/cli.js" },
+  "files": [
+    "dist/src/**/*.js",
+    "roles",
+    "templates",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovani-junior-dev/sdlc-codex-community.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test \"dist/tests/unit/*.test.js\" \"dist/tests/integration/*.test.js\"",
+    "test:live": "node --test \"dist/tests/live/*.test.js\"",
+    "start": "node dist/src/cli.js",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "typescript": "5.8.3"
+  }
+}

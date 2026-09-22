@@ -1,0 +1,13 @@
+src/
+tests/
+docs/
+specs/
+graft/
+.github/
+.sdlc-codex/
+AGENTS.md
+probe-lock.mjs
+tsconfig.json
+*.log
+*.tgz
+*.map

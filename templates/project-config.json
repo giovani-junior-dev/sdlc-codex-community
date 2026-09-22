@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "projectId": "11111111-2222-3333-4444-555555555599",
+  "projectName": "Fixture Node",
+  "prBase": "main",
+  "checks": {
+    "build": { "executable": "npm", "args": ["run", "build"] },
+    "unit": { "executable": "npm", "args": ["test"] }
+  },
+  "models": {},
+  "protectedPaths": [".sdlc-codex", ".git"],
+  "// requirementsManifest": "Opcional (decisão M0-F2 nº4 / M4-F3). Ex.: \"requirementsManifest\": { \"manifestPath\": \".sdlc-codex/requirements.json\", \"planPath\": \"plan.md\", \"planHash\": \"<sha256 do plano aprovado>\" }. O arquivo de manifesto contém { \"entries\": [{ \"id\": \"REQ-1\", \"stage\": \"any\", \"mandatory\": true }] } e o gate valida os IDs de requisitos contra ele (IDs desconhecidos, duplicados contraditórios ou obrigatórios sem cobertura reprovam). Sem este campo vale a regra legada de prefixo slug:stage. Quando configurado, o planHash é conferido contra o conteúdo atual do plano (manifesto desvinculado falha fechado)."
+}
