@@ -4,12 +4,15 @@
   "description": "Orquestração local de equipes de sessões Codex com pipeline, evidências e comunicação bidirecional.",
   "private": true,
   "type": "module",
-  "bin": { "sdlc-codex": "dist/src/cli.js" },
+  "bin": {
+    "sdlc-codex": "dist/src/cli.js"
+  },
   "files": [
     "dist/src/**/*.js",
     "roles",
     "templates",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=22"
@@ -29,5 +32,6 @@
   "devDependencies": {
     "@types/node": "22.15.21",
     "typescript": "5.8.3"
-  }
+  },
+  "license": "MIT"
 }

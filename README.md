@@ -703,3 +703,7 @@ Os cenários live exigem variáveis específicas e um alvo descartável marcado.
 - SHA-256: consulte `SHA256SUMS.txt` nos assets da release.
 
 O pacote inclui o CLI compilado, papéis, templates e o guia de instalação da versão. Código-fonte, testes, logs, estado local e credenciais não fazem parte do artefato instalado.
+
+## Licença
+
+Disponível sob a [licença MIT](LICENSE). Você pode usar, modificar e redistribuir o projeto, inclusive comercialmente, preservando o aviso de copyright e a licença.
