@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sdlc-codex.pages.dev/sitemap.xml

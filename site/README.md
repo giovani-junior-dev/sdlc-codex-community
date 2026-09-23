@@ -14,7 +14,8 @@ Também é possível abrir `index.html` diretamente; se o navegador bloquear o c
 - `styles.css`: layout responsivo, identidade e preferência por movimento reduzido.
 - `hero-motion.css`: fábrica como background integral da hero, com contraste para o texto sobreposto.
 - `app.js`: quatro etapas, dois formatos, cópia com feedback e menu mobile.
-- `assets/factory.png`: ilustração gerada para esta página; não é uma captura do produto em execução.
+- `assets/factory.webp`: ilustração otimizada para a hero e poster do vídeo (96 KB). O PNG original fica no código-fonte. Não é uma captura do produto em execução.
+- `assets/sdlc-codex-og-v1.jpg`: imagem de compartilhamento gerada por IA, 1200 × 630, JPEG (168 KB).
 - `assets/factory-flow-loop.mp4`: sequência de 9,5 segundos gerada no Replicate: papéis entram pela esquerda, a máquina processa e uma aplicação sai à direita. Repetição contínua com dissolvência entre o final e o início, sem fade para preto e sem reproduzir ao contrário. O botão permite pausar; movimento reduzido usa só a imagem, sem carregar o vídeo. A reprodução pausa quando a hero sai da tela ou a aba fica oculta. `factory-motion.mp4` preserva a primeira versão, substituída por ter movimento insuficiente.
 - `assets/logo.svg`: marca vetorial local.
 
@@ -34,4 +35,12 @@ if ($LASTEXITCODE -ne 0) { throw 'Build failed' }
 wrangler pages deploy $pagesOutput --project-name sdlc-codex --branch main --commit-dirty=true
 ```
 
-O build copia somente oito assets públicos para uma pasta temporária nova. Não inclui servidor local, README, versões antigas do vídeo, documentos internos ou arquivos do CLI. Direct Upload não configura publicação automática por Git: atualizações usam o comando acima. Domínio personalizado não configurado nesta publicação.
+O build copia somente os treze arquivos públicos da lista explícita em `build.mjs` para uma pasta temporária nova, incluindo SEO, página 404 e imagem de compartilhamento. Não inclui servidor local, README, PNG original, documentos internos ou arquivos do CLI. Direct Upload não configura publicação automática por Git: atualizações usam o comando acima. Domínio personalizado não configurado nesta publicação.
+
+## SEO e compartilhamento
+
+Canonical, Open Graph, Twitter Card e JSON-LD ficam no HTML inicial. A URL canônica é `https://sdlc-codex.pages.dev/`. Ao mudar o domínio, atualize também `robots.txt`, `sitemap.xml`, `llms.txt` e todas as URLs absolutas dos metadados.
+
+O sitemap inclui somente a página canônica, sem fragmentos. Atualize `lastmod` quando houver mudança relevante no conteúdo. `404.html` evita o fallback de aplicação de página única para endereços inexistentes no Pages. `llms.txt` é um índice complementar experimental; não garante indexação nem citação por IA.
+
+Use uma nova versão do nome da imagem OG ao trocar a thumb para reduzir problemas de cache nas plataformas. A imagem não é carregada na hero. Consulte [o registro de SEO](../docs/seo-launch.md) para escopo, evidências e acompanhamento.

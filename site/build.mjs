@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 // Explicit public assets only: never upload the repository or local server.
 const root = dirname(fileURLToPath(import.meta.url));
-const files = ['index.html', 'styles.css', 'hero-motion.css', 'tutorial.css', 'app.js', 'assets/logo.svg', 'assets/factory.png', 'assets/factory-flow-loop.mp4'];
+const files = ['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'llms.txt', 'styles.css', 'hero-motion.css', 'tutorial.css', 'app.js', 'assets/logo.svg', 'assets/factory.webp', 'assets/factory-flow-loop.mp4', 'assets/sdlc-codex-og-v1.jpg'];
 const output = await mkdtemp(join(tmpdir(), 'sdlc-codex-pages-'));
 for (const file of files) {
   if (/\.(html|css|js|svg)$/.test(file)) {

@@ -1,0 +1,23 @@
+# SDLC Codex Community
+
+> CLI open source sob licença MIT para coordenar agentes em sessões independentes do Codex no Windows com Herdr.
+
+O projeto organiza cinco papéis: planner, dev, reviewer, tester-e2e e document. Oferece comunicação bidirecional, estado persistido, recuperação por checkpoint e pipeline com evidências. Merge e deploy dependem de decisão humana. Não é um painel web nem um produto oficial da OpenAI.
+
+## Instalação e uso
+
+- [Página e tutorial](https://sdlc-codex.pages.dev/): requisitos e instruções com comandos e prompts.
+- [README](https://github.com/giovani-junior-dev/sdlc-codex-community#readme): instalação e operação local.
+- [Release v0.1.0](https://github.com/giovani-junior-dev/sdlc-codex-community/releases/tag/v0.1.0): pacote, licença e checksum.
+
+Requisitos: Windows, Node.js 22+, Git, GitHub CLI, Codex CLI autenticado e Herdr. O código é MIT; acesso a modelos e serviços externos depende das condições de cada fornecedor. DeepSeek e GLM estão em pesquisa, sem compatibilidade demonstrada.
+
+## Referências do projeto
+
+- [Código-fonte](https://github.com/giovani-junior-dev/sdlc-codex-community): repositório público oficial do projeto.
+- [Arquitetura](https://github.com/giovani-junior-dev/sdlc-codex-community/blob/main/docs/architecture.md): método, adaptadores e estado.
+- [Compatibilidade](https://github.com/giovani-junior-dev/sdlc-codex-community/blob/main/docs/compatibility.md): versões verificadas e limitações.
+- [Operação](https://github.com/giovani-junior-dev/sdlc-codex-community/blob/main/docs/operations.md): fluxos e recuperação.
+- [Licença MIT](https://github.com/giovani-junior-dev/sdlc-codex-community/blob/main/LICENSE): termos de uso e redistribuição.
+
+Mantido por giovani-junior-dev. Atualizado em 2026-09-22.
